@@ -288,6 +288,9 @@ p.large {
     font-size: 1.2em
 }
 
+p.medium {
+    font-size: medium;
+}
 .light {
     color: #fff
 }
@@ -474,7 +477,7 @@ p.large {
 
 .grdnt-yellow:not(.overly) {
     background-image: -webkit-linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);
-    background-image: linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%)
+    background-image: linear-gradient(130deg, #b2eaff 0, #320fbfdb 51%, #ffa159 100%)
 }
 .grdnt-blue.overly:before {
     background-image: -webkit-linear-gradient(90deg, #5722ff 0, #8103ff 51%, #5722ff 100%);
@@ -502,7 +505,7 @@ p.large {
 }
 .grdnt-yellow.overly:before {
     background-image: -webkit-linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);
-    background-image: linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%)
+    background-image: linear-gradient(130deg, #b2eaff 0, #320fbfdb 51%, #ffa159 100%)
 }
 
 a[class*=grdnt-],
@@ -683,7 +686,7 @@ input[class*=grdnt-]:hover {
 
 .spce {
     clear: both;
-    height: 20px;
+    height: 30px;
     width: 100%
 }
 
@@ -1392,7 +1395,7 @@ input.btn:hover {
     background: #fff;
     transition: 0.5s;
     cursor: pointer;
-    height: 400px;
+    height: 350px;
 }
 .shad-item.light .item{
     border-radius: 10px;
