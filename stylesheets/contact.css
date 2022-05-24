@@ -146,12 +146,18 @@ form input[type=submit] {
   margin-top: 10px;
   width: 150px;
   font-size: 1rem;
+  background-image: -webkit-linear-gradient(135deg, #9a55f5 0, #b44ee8 51%, #9a55f5 100%);
+  background-image: linear-gradient(135deg, #9a55f5 0, #b44ee8 51%, #9a55f5 100%)
+
 }
 form input[type=submit]:hover {
   cursor: pointer;
+  background:  linear-gradient(135deg, #9a55f5c8 0, #664ce66f 51%, #9a55f58b 100%);
+  box-shadow: inset 4px 4px 60px rgba(255, 255, 255, 0.2);
+
 }
 form input[type=submit]:active {
-  background: rgba(255, 255, 255, 0.2);
+  background:  linear-gradient(135deg, #9a55f5c8 0, #664ce66f 51%, #9a55f5ba 100%);
 }
 form:hover {
   margin: 4px;
@@ -165,7 +171,7 @@ form:hover {
 }
 
 .drop {
-  background: #8784e978;
+  background:  linear-gradient(135deg, #9a55f5c8 0, #664ce66f 51%, #9a55f5ba 100%);
   backdrop-filter: blur(10px);
   border-radius: 50%;
   border-left: 1px solid rgba(255, 255, 255, 0.3);

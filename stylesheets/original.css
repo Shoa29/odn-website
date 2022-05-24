@@ -1,6 +1,61 @@
 .subscribe-button{
     outline:none;
 }
+.glassIco {
+    --width: 100px;
+    width: var(--width);
+    height: var(--width);
+    color: #fff;
+    font-size: 30px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin: 10px 2px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .glassIco, .glassIco * {
+    box-sizing: border-box;
+    transition: 500ms;
+  }
+  .glassIco:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    filter: blur(0px);
+    transition: 400ms;
+    transform: skewX(45deg) translateX(calc(var(--width) + 50%));
+  }
+  .glassIco:hover {
+    transform: translateY(-10px);
+  }
+  .glassIco:hover:before {
+    transform: skewX(45deg) translateX(calc(var(--width) * -1 - 50%));
+  }
+  .glassIco > * {
+    opacity: 0.8;
+  }
+  
+  /*# sourceMappingURL=temp.css.map */
+  
+.location-title-meta{
+    text-align: center;
+    font: normal normal normal 26px/54px Verdana;
+    letter-spacing: 0px;
+    color: #1C75BC;
+    margin-top: 10%;
+    text-shadow: 0px 2px 4px #00000029;
+}
 form input[type=submit] {
     margin-top: 10px;
     width: 150px;
@@ -165,6 +220,7 @@ text-shadow: 0px 2px 4px #00000029;
     display:block;
     position:relative;
     margin-top: 10%;
+
     
 }
 .locations-work::before{

@@ -1555,7 +1555,7 @@ input.btn:hover {
 
 .social-holder a {
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .social-holder a:last-child {
@@ -1580,13 +1580,13 @@ input.btn:hover {
 }
 
 .social-holder a {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, .2)
+    background: rgba(0, 0, 0, .25)
 }
 
 .social-holder a:hover {
