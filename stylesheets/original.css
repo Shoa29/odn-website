@@ -347,6 +347,15 @@ text-shadow: 0px 2px 4px #00000029;
 }
 
 @media only screen and (max-width :1100px) {
+    .quote .owl-item img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50% 50% 0% 40%;
+        margin-left:  -100%;
+    }
+    form{
+        width: 480px;
+    }
     .hero .img-pre.right{
         right: -150px;
         max-width: 400px;
@@ -369,6 +378,12 @@ text-shadow: 0px 2px 4px #00000029;
     }
 }
 @media only screen and (min-width: 850px) and (max-width :950px) {
+    .quote .owl-item img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50% 50% 0% 40%;
+        margin-left:  -100%;
+    }
     .hero .img-pre.right{
         right: -50px;
         max-width: 400px;
@@ -416,6 +431,16 @@ text-shadow: 0px 2px 4px #00000029;
 }
 
 @media only screen and (min-width: 280px) and (max-width :600px) {
+    .quote .owl-item img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50% 50% 0% 40%;
+        margin-left:  -80%;
+    }
+    form{
+        width: 350px;
+        padding: 0.4em;
+    }
     .hero .img-pre.right{
         /* right: -150px;
         max-width: 400px;
