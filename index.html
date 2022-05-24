@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<title>ODN - Oceans Diginett</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" href="image/favicon.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/vendor.bundle.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/original.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/portfolio.css">
 </head>
-<body data-spy="scroll" data-target="#navbar" data-offset="70">
-
-	<!-- Preloader -->
+<body>
+  	<!-- Preloader -->
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
 	</div>
-	<!--  -->
-
-	<!-- header -->
-	<header>
-		<!-- navbar -->
+  <header class="banner">
+    		<!-- navbar -->
 		<nav id="navbar" class="navbar navbar-custom navbar-fixed-top" data-spy="affix" data-offset-top="70">
 			<div class="container">
 				<div class="row">
@@ -30,7 +27,7 @@
 							<i class="fa fa-bars"></i>
 						</button>
 						<a class="navbar-brand page-scroll logo-light" href="index.html"></a>
-						<a class="navbar-brand page-scroll logo-clr" href="index.html"><img width="70" height="70" alt="" src="img/logoodn.png"></a>
+						<a class="navbar-brand page-scroll logo-clr" href="index.html"><img width="70" height="70" alt="" src="images/logoodn.png"></a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,7 +51,7 @@
 								</li>
 							</ul>
 							<div class="nav-btn">
-								<a href="#contact" class="btn btn-border">Contact Us</a>
+								<a id="contact-btn" href="contact.html" class="btn btn-border">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -63,21 +60,22 @@
 			</div>
 		</nav>
 		<!-- End navbar -->
-
 		<!-- banner -->
-		<div id="home" class="hero grdnt-yellow bg-trans-2 style-wave-2">
+		<div id="home" class="hero bg-trans-2 style-wave-2">
 			<div class="container">
 				<div class="row hero-content">
 					<div class="row">
 						<div class="col-sm-6 col-md-5">
+              <img width="300" height="150" class="odn-title" src="images/odn.svg">
 							<div class="intro-text light">
-								<h1>You think, We'll Create</h1>
-								<div class="spce"></div>
-								<p class="large">There's a hell lot of chaos in the ocean of multitude technologies. I mean seriously what does one gotta do to develop a life changing solution? Well contact ODN!</p>
+								<span class="you-think">YOU THINK</span><br><span class="second-line-intro"><span class="we">WE</span> <span class="create">Create</span> </span>
+								<!-- <div class="spce"></div> -->
+								<p class="intro-desc">There's a hell lot of chaos in the ocean of multitude technologies. I mean seriously what does one gotta do to develop a life changing solution? Well contact ODN!</p>
 							</div>
+              <div class="book-blur"><a href="contact.html" class="book-blur-btn">Book Consultation Now!</a></div>
 						</div>
-						<div class="col-sm-6 col-md-7 img-pre jump-anim">
-							<img alt="" src="img/development-4536630_1920.png">
+						<div class="col-sm-6 col-md-7 img-pre jump-anim right">
+							<img alt="" width="500" height="500" src="images/development-4536630_1920.png">
 						</div>
 					</div>
 				</div>
@@ -85,931 +83,406 @@
 		</div>
 		<!-- End Banner -->
 
-	</header>
-	<!-- End header -->
 
-	<!-- count 
-	<section class="counter-section">
-		<div class="container">
-			<div class="row">
-				<div class="items sec-pad-sm row brdr-btm grad-yellow right-dir-col res-center-sm wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-					<div class="col-sm-3 res-margin-sm">
-						<div class="icon-md">
-							<span class="ti-comments-smiley clip-txt" aria-hidden="true"></span>
-						</div>
-						<div class="text">
-							<h4 class="counter mg-0">367</h4>
-							<p>happy Users</p>
-						</div>
-					</div>
-					<div class="col-sm-3 res-margin-sm">
-						<div class="icon-md">
-							<span class="ti-import  clip-txt" aria-hidden="true"></span>
-						</div>
-						<div class="text">
-							<h4 class="counter mg-0">736</h4>
-							<p>App Downloaded</p>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="icon-md">
-							<span class="ti-power-off clip-txt" aria-hidden="true"></span>
-						</div>
-						<div class="text">
-							<h4 class="counter mg-0">279</h4>
-							<p>Swith to App</p>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="icon-md">
-							<span class="ti-comments clip-txt" aria-hidden="true"></span>
-						</div>
-						<div class="text">
-							<h4 class="counter mg-0">189</h4>
-							<p>Positive Reviews</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End counter -->
-
+  </header>
 	<!-- Feature -->
-	<section id="services" class="bg-memphis sec-pad">
+	<section id="about" class="bg-about">
+    <div class="container">
+      <div class="row">
+        <div class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+
+          <div class="col-md-6 col-lg-6 col-sm-12 about-div">
+            <span class="about-title">
+              <p>Who We Are...</p>
+            </span>
+            <br>
+            <br>
+            <div class="about-text-left">
+            <p class="about-text">Oceans Diginett recognizes the stress of bringing a pool of technical expertise together and implementing the idea with perfection.</p><p class="about-text"> Here’s the good news, Oceans Diginett is here for your rescue! We will develop your product with our team’s efficiency and diversified talent, while you can just sit back, relax and think of new ideas. </p></div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12 ">
+            <img src="images/about.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+	<!-- End feature -->
+
+
+	<section id="services" class="bg-services">
 		<div class="container">
 			<div class="row">
-				<div class="section-text grad-yellow text-center  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+				<div class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
 					
-					<h3>Our Services</h3>
+          <span class="about-title">
+            <p>Our Services</p>
+          </span>
 				</div>
-				<div class="items row">
+				<div class="row">
 					<div class="text-center col-feat shad-item">
-						<div class="col-md-6 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-							<div class="item">
-								<div class="icon-bg-lg bg-rad-anim grdnt-yellow">
-									<span class="fa fa-desktop"></span>
+						<div class="col-md-4 col-sm-6 res-margin wow animated fadeInUp  " data-wow-duration="1.2s" data-wow-delay=".2s">
+							<div class="item-drops item-drops-webdev">
+								<div class="icon-bg-lg bg-rad-anim" style="background-color: white;">
+									<!-- <span class="fa fa-desktop"></span> -->
+                  <img src="images/webdevicon.svg">
 								</div>
 								<div class="spce"></div>
 								<h5>Web Development</h5>
 								<p style="font-size: medium;">We facilitate wide range of technologies to build a perfect website for you.</p>
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.4s" data-wow-delay=".2s">
-							<div class="item">
-								<div class="icon-bg-lg bg-rad-anim grdnt-yellow">
-									<span class="fa fa-line-chart"></span>
+						<div class="col-md-4 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.4s" data-wow-delay=".2s">
+							<div class="item-drops item-drops-ds">
+								<div class="icon-bg-lg bg-rad-anim" style="background-color: white;">
+                  <img src="images/dsicon.svg" width="200" height="200">
 								</div>
 								<div class="spce"></div>
 								<h5>Data Science/Machine Learning</h5>
 								<p style="font-size: medium;">We have expertise to build intelligent solutions and cater to data needs.</p>
 							</div>
 						</div>
-						<!--<div class="col-md-3 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.8s" data-wow-delay=".2s">
-							<div class="item">
-								<div class="icon-bg-lg bg-rad-anim grdnt-yellow">
-									<span class="fa fa-share-alt"></span>
-								</div>
-								<div class="spce"></div>
-								<h5>Digital/ Affiliate/ Email Marketing</h5>
-								<p>Get promoted on all preferred online platforms. Besides, we can embed and manage your personalized affiliate program to boost your sales</p>
-							</div>
-						</div>-->
-					</div>
-				</div>
-				<div class="items row">
-					<div class="text-center col-feat shad-item">
-						<!--<div class="col-md-3 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-							<div class="item">
-								<div class="icon-bg-lg bg-rad-anim grdnt-yellow">
-									<span class="fa fa-pencil-square-o"></span>
-								</div>
-								<div class="spce"></div>
-								<h5>Content Creation</h5>
-								<p>Stuck in a creative block, get videos, scripts, banners, etc made by experts!</p>
-							</div>
-						</div>-->
-						<div class="col-md-6 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.6s" data-wow-delay=".2s">
-							<div class="item">
-								<div class="icon-bg-lg bg-rad-anim grdnt-yellow">
-									<span class="fa fa-tablet"></span>
+						<div class="col-md-4 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.8s" data-wow-delay=".2s">
+							<div class="item-drops item-drops-appdev">
+								<div class="icon-bg-lg bg-rad-anim" style="background-color: white;">
+									<img src="images/appdevicon.svg" width="50" height="50">
 								</div>
 								<div class="spce"></div>
 								<h5>App Development</h5>
 								<p style="font-size: medium;">With an option of wide range of technologies, get your app or software built.</p>
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.6s" data-wow-delay=".2s">
-							<div class="item">
-								<div class="icon-bg-lg bg-rad-anim grdnt-yellow">
-									<span class="fa fa-code"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="text-center col-feat shad-item">
+						<div class="col-md-4 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+							<div class="item-drops item-drops-ux">
+								<div class="icon-bg-lg bg-rad-anim" style="background-color: white;">
+									<img src="images/ux.svg">
+								</div>
+								<div class="spce"></div>
+								<h5>UX/UI Designing</h5>
+								<p>Our experts will ensure your product gives the best user experience</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.6s" data-wow-delay=".2s">
+							<div class="item-drops item-drops-web3">
+								<div class="icon-bg-lg bg-rad-anim" style="background-color: white;">
+									<img src="images/web3.svg">
 								</div>
 								<div class="spce"></div>
 								<h5>Blockchain (Web 3)</h5>
-								<p class="medium">And yes we also create the future...</p>
+								<p style="font-size: medium;">And yes we also create the future...</p>
 							</div>
 						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End feature -->
-
-	<!-- cta
-	<section class="cta sec-pad-lg pt-0">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-					<img alt="" src="image/img-art.png">
-					<div class="spce"></div>
-					<h4>30,0000+ Users</h4>
-					<p>Exchange ideas within a transparent community of friends think consectetur adipiscing elit, sed do eiusmod tempor.</p>
-					<div class="spce"></div>
-					<a class="btn grdnt-yellow" href="#"><span>Try for 7 days free</span></a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End cta -->
-
-	<!-- About 
-	<section class="sec-pad-lg grdnt-yellow light">
-		<div class="container">
-			<div class="row">
-				<div class="flx-container res-center-sm align-flx-center flx-off-sm row">
-					<div class="col-sm-3 res-margin-sm wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-						<div class="text">
-							<h4>Track Progress</h4>
-							<div class="spce"></div>
-							<p>Transparent and Systematic Development Process in Place to Ensure Quality and Client Satisfaction.</p>
-							<div class="spce"></div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-5 text-center wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-						<img src="img/undraw_Progress_overview_re_tvcl.png">
-						<!--<div class="text-center grad-yellow btn-over">
-							<a class="btn-round video" href="https://www.youtube.com/watch?v=iaj8ktgL3BY"><i class="fa fa-play clip-txt" aria-hidden="true"></i></a>
-						</div>-
-					</div>
-					<div class="col-md-4 col-md-offset-1 col-sm-4">
-						<div class="right-dir-col wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-								<div class="list">
-									<div class="icon-md">
-										<i class="fa fa-check-circle"></i>
-									</div>
-									<div class="text">
-										<h5>Future IT Maintainence</h5>
-										<p>Auto notificationthat adapts to your way of working</p>
-									</div>
+						<div class="col-md-4 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.6s" data-wow-delay=".2s">
+							<div class="item-drops item-drops-support">
+								<div class="icon-bg-lg bg-rad-anim" style="background-color: white;">
+									<img src="images/techsupporticon.svg">
 								</div>
 								<div class="spce"></div>
-								<div class="list">
-									<div class="icon-md">
-										<span class="fa fa-check-circle" aria-hidden="true"></span>
-									</div>
-									<div class="text">
-										<h5></h5>
-										<p>Hangout withwhat you did and go celebrate your wins.</p>
-									</div>
-								</div>
-								<div class="spce"></div>
-								<div class="list">
-									<div class="icon-md">
-										<span class="fa fa-check-circle" aria-hidden="true"></span>
-									</div>
-									<div class="text">
-										<h5>Collaborate with those who matter.</h5>
-										<p>Play music and give yourself a little boost on online tracking.</p>
-									</div>
-								</div>
+								<h5>Tech Support</h5>
+								<p class="medium">Anyways, we also offer you round the clock technical support & maintenance</p>
 							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- // -->
 
-	<!-- Overview 
-	<section id="overview" class="sec-pad-lg">
-		<div class="container">
-			<div class="row">
-				<div class="row">
-					<div class="flx-container res-center-sm align-flx-center flx-off-sm row">
-						<div class="col-md-4 col-sm-6 res-margin-sm animated wow fadeInUp" data-wow-duration="2s">
-							<div class="text">
-								<h3>Stop irritating organizing tasks</h3>
-								<div class="spce"></div>
-								<p>Exchange ideas within a transparent community of friends think consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-							<div class="btn-holder grad-yellow">
-								<a class="btn grdnt-yellow" href="#">
-									<i class="fa fa-apple" aria-hidden="true"></i><span>Get It Now</span></a>
-								<a class="btn grdnt-yellow fill" href="#">
-									<i class="fa fa-android clip-txt" aria-hidden="true"></i><span class="clip-txt">Get It Now</span></a>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-offset-1 col-sm-6 animated wow fadeInUp" data-wow-duration="4s">
-							<img alt="" src="image/img-j.png">
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- // -->
-
-	<!--overview 2 
-	<section class="sec-pad-lg pt-0">
-		<div class="container">
-			<div class="row">
-				<div class="row">
-					<div class="flx-container res-center-sm align-flx-center flx-off-xs row">
-						<div class="col-sm-5 col-md-5 res-margin-sm">
-							<div class="overview-img wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-								<img alt="" src="image/img-k.png">
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-5 col-md-offset-2">
-							<div class="overview-text wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-								<div class="text grad-blue">
-									<h3>Build for your daily schedule reporting</h3>
-									<p>Exchange ideas within a transparent community of friends think consectetur adipiscing elit, sed do eiusmod tempor.</p>
-								</div>
-								<div class="btn-holder grad-yellow">
-									<a class="btn grdnt-yellow" href="#">
-										<i class="fa fa-apple" aria-hidden="true"></i><span>Get It Now</span></a>
-									<a class="btn grdnt-yellow fill" href="#">
-										<i class="fa fa-android clip-txt" aria-hidden="true"></i><span class="clip-txt">Get It Now</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--  -->
-
-	<!-- Screenshot -->
-	<section id="work" class="sec-pad-lg grdnt-yellow light" style="height:fit-content !important; padding:50px 0px !important;">
-		<div class="container">
+  <section id="work">
+    <div class="container work-head-odn">
 			<div class="section-text text-center wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-				<p class="meta-head">Some Previous Work</p>
-				<h4>100% Client's Satisfaction is our Key to Growth</h4>
-			</div>
-		</div>
-		<div class="grid image-grid">
+				<p class="work-title-meta">Some Previous Work</p>
+				<h4 class="work-meta-sub">100% Client's Satisfaction is our Key to Growth</h4>
+			</div>     
+      <div class="grid image-grid wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
 
 
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link" href="https://www.aniclothing.in/" target="_blank">
-				  <img class="tile-img tile-img1" alt="Ani Clothing - Fashion Ecommerce" src="img/ani.PNG">
-				</a>
-			  </div>
-			</div>
-		  
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link"href="https://yu-be.com/" target="_blank">
-				  <img class="tile-img tile-img2" alt="Yu-be - Beauty Products Ecommerce" src="img/yube.PNG">
-				</a>
-			  </div>
-			</div>
-		  
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link" href="https://www.postaonline.cz/vyhledat-pobocku" target="_blank">
-				  <img class="tile-img tile-img3" alt="Rental Service" src="img/posta.PNG">
-				</a>
-			  </div>
-			</div>
-		  
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link" href="https://www.unqueue.app/" target="_blank">
-				  <img class="tile-img tile-img4" alt="Ecommerce Management" src="img/unqueue1.PNG">
-				</a>
-			  </div>
-			</div>
-		  
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link" href="http://leaflets.zynahoverseas.in/" target="_blank">
-				  <img class="tile-img tile-img5" alt="Leaflets - Disposable Supplier" src="img/leaflets.PNG">
-				</a>
-			  </div>
-			</div>
-		  
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link" href="https://clarisys.de/" target="_blank">
-				  <img class="tile-img tile-img6" alt="Corporate Website" src="img/clarysis.PNG">
-				</a>
-			  </div>
-			</div>
-		  
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link" href="https://www.cryptosmartlife.com/" target="_blank">
-				  <img class="tile-img tile-img7" src="img/cryptosmartlife.png" alt="Automated Crypto Coin Investing Platform">
-				</a>
-			  </div>
-			</div>
-		  
-			<div class="grid-block">
-			  <div class="tile">
-				<a class="tile-link" href="http://runedrops.com/" target="_blank">
-				  <img class="tile-img tile-img8" src="img/runedrops.gif" alt="Runedrops" >
-				</a>
-			  </div>
-			</div>
-		  
-		  </div>
-		
-		<!-- <div class="screenshot wow animated fadeInUp" data-wow-duration="5s" data-wow-delay="1s">
-			<div  class="owl-carousel screen nplr screen-loop">
-				<div class="wrapp">
-					<a href="https://www.aniclothing.in/" target="_blank"><img alt="Ani Clothing - Fashion Ecommerce" src="img/ani.PNG"></a>
-				</div>
-				<div class="wrapp">
-					<a href="https://yu-be.com/" target="_blank"><img alt="Yu-be - Beauty Products Ecommerce" src="img/yube.PNG"></a>
-				</div>
-				<div class="wrapp">
-					<a href="https://www.postaonline.cz/vyhledat-pobocku" target="_blank"><img alt="Rental Service" src="img/posta.PNG"></a>
-				</div>
-				<div class="wrapp">
-					<a href="http://leaflets.zynahoverseas.in/" target="_blank"><img alt="Leaflets - Disposable Supplier" src="img/leaflets.PNG"></a>
-				</div>
-				<div class="wrapp">
-					<a href="https://www.unqueue.app/" target="_blank"><img alt="Ecommerce Management" src="img/unqueue1.PNG"></a>
-				</div>
-				<div class="wrapp">
-					<a href="https://clarisys.de/" target="_blank"><img alt="Corporate Website" src="img/clarysis.PNG"></a>
-				</div>
-			</div> -->
-		</div>
-	</section>
-	<!-- End Screenshot -->
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+            <a class="tile-link" href="https://www.cryptosmartlife.com/" target="_blank">
+              <img class="tile-img tile-img1" src="images/cryptosmartlife.png" alt="Automated Crypto Coin Investing Platform">
+            </a>
 
+          </div>
+        </div>
+        
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+          <a class="tile-link"href="https://yu-be.com/" target="_blank">
+            <img class="tile-img tile-img1" alt="Yu-be - Beauty Products Ecommerce" src="images/yube.PNG">
+          </a>
+          </div>
+        </div>
+        
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+          <a class="tile-link" href="https://www.postaonline.cz/vyhledat-pobocku" target="_blank">
+            <img class="tile-img tile-img1" alt="Rental Service" src="images/posta.PNG">
+          </a>
+          </div>
+        </div>
+        
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+          <a class="tile-link" href="https://www.unqueue.app/" target="_blank">
+            <img class="tile-img tile-img1" alt="Ecommerce Management" src="images/unqueue1.PNG">
+          </a>
+          </div>
+        </div>
+        
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+          <a class="tile-link" href="http://leaflets.zynahoverseas.in/" target="_blank">
+            <img class="tile-img tile-img1" alt="Leaflets - Disposable Supplier" src="images/leaflets.PNG">
+          </a>
+          </div>
+        </div>
+        
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+          <a class="tile-link" href="https://clarisys.de/" target="_blank">
+            <img class="tile-img tile-img1" alt="Corporate Website" src="images/clarysis.PNG">
+          </a>
+          </div>
+        </div>
+        
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+            <a class="tile-link" href="https://www.aniclothing.in/" target="_blank">
+              <img class="tile-img tile-img1" alt="Ani Clothing - Fashion Ecommerce" src="images/ani.PNG">
+            </a>
+          </div>
+        </div>
+        
+        <div class="grid-block col-md-6 col-sm-12 wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+          <div class="tile">
+          <a class="tile-link" href="http://runedrops.com/" target="_blank">
+            <img class="tile-img tile-img1" src="images/runedrops.gif" alt="Runedrops" >
+          </a>
+          </div>
+        </div>
 
-	<!-- Pricing -->
-	<section id="pricing" class="sec-pad-lg grad-yellow">
-		<div class="container">
-			<!--<div class="row">
-				<div class="row">
-					<div class="pricing wrapper">
-						<div class="section-text text-center wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-							<p class="meta-head">Pricing plans</p>
-							<h3>Extensive functionality, afforadable pricing</h3>
-						</div>
-						<div class="pricing-btn text-center wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-							<label class="toggler toggler--is-active" id="filt-monthly">Monthly</label>
-							<div class="toggle grdnt-yellow">
-								<input type="checkbox" id="switcher" class="check">
-								<b class="b switch"></b>
-							</div>
-							<label class="toggler" id="filt-hourly">Yearly</label>
-						</div>
-						<div class="spce"></div>
-						<div class="pricing grad-yellow text-center wow animated fadeInUp" data-wow-duration="1.4s" data-wow-delay=".2s">
-							<div id="monthly" class="clearfix model">
-								<div class="col-sm-4">
-									<div class="pricing-table bg-gray res-margin-sm">
-										<div class="inner">
-											<div class="pricing-header">
-												<div class="main-pricing">
-													<h5>Primary Plan</h5>
-													<h3 class="fw-400"><span class="clip-txt">$0</span><span class="meta fw-300"> / month</span></h3>
-												</div>
-											</div>
-											<div class="pricing-content">
-												<div class="pricing-feature">
-													<ul>
-														<li>24/7 Support</li>
-														<li>Free Update</li>
-														<li>unimited download</li>
-														<li>1 Year Licnese</li>
-														<li>Source files</li>
-													</ul>
-												</div>
-											</div>
-											<div class="pricing-footer">
-												<div class="pricing-footer grad-prple">
-													<a class="btn grdnt-yellow fill" href="#"><span class="clip-txt">Try iT Now</span></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="pricing-table grdnt-yellow res-margin-sm">
-										<div class="inner">
-											<div class="pricing-header">
-												<div class="main-pricing">
-													<h5>Popular Plan</h5>
-													<h3 class="fw-400"><span class="clip-txt">$40</span><span class="meta fw-300"> / month</span></h3>
-												</div>
-											</div>
-											<div class="pricing-content">
-												<div class="pricing-feature">
-													<ul>
-														<li>24/7 Support</li>
-														<li>Free Update</li>
-														<li>unimited download</li>
-														<li>1 Year Licnese</li>
-														<li>Source files</li>
-													</ul>
-												</div>
-											</div>
-											<div class="pricing-footer">
-												<div class="pricing-footer grad-prple">
-													<a class="btn grdnt-yellow" href="#"><span>Try iT Now</span></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="pricing-table bg-gray res-margin-sm">
-										<div class="inner">
-											<div class="pricing-header">
-												<div class="main-pricing">
-													<h5>Professional Plan</h5>
-													<h3 class="fw-400"><span class="clip-txt">$60</span><span class="meta fw-300"> / month</span></h3>
-												</div>
-											</div>
-											<div class="pricing-content">
-												<div class="pricing-feature">
-													<ul>
-														<li>24/7 Support</li>
-														<li>Free Update</li>
-														<li>unimited download</li>
-														<li>1 Year Licnese</li>
-														<li>Source files</li>
-													</ul>
-												</div>
-											</div>
-											<div class="pricing-footer">
-												<div class="pricing-footer grad-prple">
-													<a class="btn grdnt-yellow fill" href="#"><span class="clip-txt">Try iT Now</span></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="hourly" class="none clearfix model">
-								<div class="col-sm-4">
-									<div class="pricing-table bg-gray res-margin-sm">
-										<div class="inner">
-											<div class="pricing-header">
-												<div class="main-pricing">
-													<h5>Primary Plan</h5>
-													<h3 class="fw-400"><span class="clip-txt">$100</span><span class="meta fw-300"> / year</span></h3>
-												</div>
-											</div>
-											<div class="pricing-content">
-												<div class="pricing-feature">
-													<ul>
-														<li>24/7 Support</li>
-														<li>Free Update</li>
-														<li>unimited download</li>
-														<li>1 Year Licnese</li>
-														<li>Source files</li>
-													</ul>
-												</div>
-											</div>
-											<div class="pricing-footer">
-												<div class="pricing-footer grad-prple">
-													<a class="btn grdnt-yellow fill" href="#"><span class="clip-txt">Try iT Now</span></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="pricing-table grdnt-yellow res-margin-sm">
-										<div class="inner">
-											<div class="pricing-header">
-												<div class="main-pricing">
-													<h5>Popular Plan</h5>
-													<h3 class="fw-400"><span class="clip-txt">$200</span><span class="meta fw-300"> / year</span></h3>
-												</div>
-											</div>
-											<div class="pricing-content">
-												<div class="pricing-feature">
-													<ul>
-														<li>24/7 Support</li>
-														<li>Free Update</li>
-														<li>unimited download</li>
-														<li>1 Year Licnese</li>
-														<li>Source files</li>
-													</ul>
-												</div>
-											</div>
-											<div class="pricing-footer">
-												<div class="pricing-footer grad-prple">
-													<a class="btn grdnt-yellow" href="#"><span>Try iT Now</span></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="pricing-table bg-gray res-margin-sm">
-										<div class="inner">
-											<div class="pricing-header">
-												<div class="main-pricing">
-													<h5>Professional Plan</h5>
-													<h3 class="fw-400"><span class="clip-txt">$300</span><span class="meta fw-300"> / year</span></h3>
-												</div>
-											</div>
-											<div class="pricing-content">
-												<div class="pricing-feature">
-													<ul>
-														<li>24/7 Support</li>
-														<li>Free Update</li>
-														<li>unimited download</li>
-														<li>1 Year Licnese</li>
-														<li>Source files</li>
-													</ul>
-												</div>
-											</div>
-											<div class="pricing-footer">
-												<div class="pricing-footer grad-prple">
-													<a class="btn grdnt-yellow fill" href="#"><span class="clip-txt">Try iT Now</span></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>		
-					</div>
-				</div>
-			
-	<!-- End Pricing -->
-</div>
-</div>
-</section>
-	<!-- Testimonial -->
-	<section id="reviews" class="sec-pad-lg pt-0">
-		<div class="container">
-			<div class="row">
-				<div class="row">
-					<div class="col-md-5 wow animated fadeInUp res-margin" data-wow-duration="1s" data-wow-delay=".2s">
-						<p class="meta-head">Clients Testimonial</p>
-						<h3>What our clients say about us</h3>
-					</div>
-					<div class="owl-carousel grad-yellow col-md-7 quote wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-						<div class="quote-item">
-							<div class="quote-text bg-gray">
-								<div class="rating">
-									<ul class="rating-list">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><p>(5)</p></li>
-									</ul>
-								</div>
-								<p>“Extremly talented coders, I had a very big project that requires weeks of work, I received tons of offers from sketchy developers, but Tecknologia's team understood what needed to happen. They said they could do it, and they sure did! They coded everything exactly like I wanted. Great communication skills as well.”</p>
-								<div class="spce"></div>
-								<div class="profile clearfix">
-									<h6 class="heading">Runedrops</h6>
-									<p>Netherlands</p>
-								</div>
-							</div>
-							<div class="profile-img"><i class=""></i><img alt="" src="img/rundrop.png"></div>
-						</div>
-						<div class="quote-item">
-							<div class="quote-text bg-gray">
-								<div class="rating">
-									<ul class="rating-list">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><p>(5)</p></li>
-									</ul>
-								</div>
-								<p>“They deliver high quality code for a very big project. Been working together now for a while, always great and high quality coding. Thanks!”</p>
-								<div class="spce"></div>
-								<div class="profile clearfix">
-									<h6 class="heading">Unqueue</h6>
-									<p>Nigeria</p>
-								</div>
-							</div>
-							<div class="profile-img"><img alt="" src="img/unq.png"></div>
-						</div>
-						<div class="quote-item">
-							<div class="quote-text bg-gray">
-								<div class="rating">
-									<ul class="rating-list">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><p>(5)</p></li>
-									</ul>
-								</div>
-								<p>“Great work and great communications from Tecknologia Team. The work was very competent, intelligent, and as fast as anyone could reasonably expect. Tecknologia easily grasped what I was asking for. I was VERY pleased with the result! Based on this project, I will be asking them to consider doing several other small and large jobs for me!”</p>
-								<div class="spce"></div>
-								<div class="profile clearfix">
-									<h6 class="heading">Wpnorg</h6>
-									<p>USA</p>
-								</div>
-							</div>
-							<div class="profile-img"><img alt="" src="img/oldman.jpg"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End testimonial -->
+    </div>
+    
+    <div class="locations-work wow animated fadeInUp" data-wow-duration="0.5s" data-wow-delay=".2s">
+      <img src="images/map.png">
+    </div>
+    </div>
 
-	<!-- download-section -
-	<section class="grdnt-yellow">
-		<div class="parallax-bg sec-pad-lg cta" style='background-image: url("img/pexels-negative-space-169573.jpg")' data-stellar-background-ratio="0.5">
-			<div class="container">
-				<div class="row">
-					<div class="light grad-yellow wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-						<h3 class="netchill" style="background:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) !important;-webkit-background-clip: text;
-						-webkit-text-fill-color: white; text-align: center;">Netflix $ Chill</h3>
-						<br>
-						<h4 class="netchill" style="background:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) !important;-webkit-background-clip: text;
-						-webkit-text-fill-color: white; text-align: center;">While we do your work ;)</h4>
-						<div class="btn-holder">
-							<div class="btn-holder">
-								<a href="#"><img alt="" src="image/is-badge.png"></a>
-								<a href="#"><img alt="" src="image/an-badge.png"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	End download-section -->
+  </section>
+  <section id="reviews">
+    <div class="container testimonials-odn">
+      <div class="container-content">
+      <div class="row">
+        <div class="row">
+        <div class="col-md-5 wow animated fadeInUp res-margin" data-wow-duration="1s" data-wow-delay=".2s">
+          <span class="testimonials-title">Client Testimonials</span>
+          <h3 class="testimonials-sub">What our clients say about us</h3>
+        </div>
+        <div class="owl-carousel grad-yellow col-md-7 quote wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+          <div class="quote-item">
+            <div class="quote-text bg-quote-odn">
+              <div class="rating">
+                <ul class="rating-list">
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><p>(5)</p></li>
+                </ul>
+              </div>
+              <p>“Extremly talented coders, I had a very big project that requires weeks of work, I received tons of offers from sketchy developers, but ODN's team understood what needed to happen. They said they could do it, and they sure did! They coded everything exactly like I wanted. Great communication skills as well.”</p>
+              <div class="spce"></div>
+              <div class="profile clearfix">
+                <h6 class="heading">Runedrops</h6>
+                <p>Netherlands</p>
+              </div>
+            </div>
+            <div class="profile-img"><i class=""></i><img alt="" src="images/rundrop.png"></div>
+          </div>
+          <div class="quote-item">
+            <div class="quote-text bg-quote-odn">
+              <div class="rating">
+                <ul class="rating-list">
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><p>(5)</p></li>
+                </ul>
+              </div>
+              <p>“They deliver high quality code for a very big project. Been working together now for a while, always great and high quality coding. Thanks!”</p>
+              <div class="spce"></div>
+              <div class="profile clearfix">
+                <h6 class="heading">Unqueue</h6>
+                <p>Nigeria</p>
+              </div>
+            </div>
+            <div class="profile-img"><img alt="" src="images/unq.png"></div>
+          </div>
+          <div class="quote-item">
+            <div class="quote-text bg-quote-odn">
+              <div class="rating">
+                <ul class="rating-list">
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><p>(5)</p></li>
+                </ul>
+              </div>
+              <p>“Great work and great communications from ODN Team. The work was very competent, intelligent, and as fast as anyone could reasonably expect. ODN easily grasped what I was asking for. I was VERY pleased with the result! Based on this project, I will be asking them to consider doing several other small and large jobs for me!”</p>
+              <div class="spce"></div>
+              <div class="profile clearfix">
+                <h6 class="heading">Wpnorg</h6>
+                <p>USA</p>
+              </div>
+            </div>
+            <div class="profile-img"><img alt="" src="images/oldman.jpg"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="faqs">
+    <div class="container">
+      <div class="section-text text-center wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+				<p class="faq-title-meta">Frequently Asked Questions</p>
+			</div>   
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/faq.svg">
+        </div>
+        <div class="col-md-6">
+              <div class="faq-wrapper clearfix">
+                <div class="col-md-12 col-sm-12 faq wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+                  <div class="panel-group res-margin" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+                            <i class="more-less glyphicon glyphicon-minus"></i>
+                            How do we order?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <p>Do you see the button on top menu, click that fill the form  Our team will contact you. Or go <a href="#feature">here</a>  click your service  fill the form our team will find you anyways</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Can we track progress of our work?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <p>Yes, currently we are working on a platform with systematic tracking and development, which would make our work completely transparent to the clients. But for now, we promise timely and regular updates and feedback sessions, at the platform of your preference</p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Terms of Payment?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          <p>It may depend on our discussion with the clients. But we take atleast 50% advance with a legal agreement for the terms of projects.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </section>
 
-	<!--Blog  
-	<section class="sec-pad-lg">
-		<div class="container">
-			<div class="row">
-				<div class="section-text text-center wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-					<p class="meta-head">latest News</p>
-					<h3>Our latest news</h3>
-				</div>
-				<div class="post row grad-yellow wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-					<div class="col-md-4 res-margin">
-						<div class="post-col">
-							<a href="blog-single.html"><img alt="" src="image/blog-img-1.jpg"></a>
-							<div class="post-content grad-yellow">
-								<div class="spce md"></div>
-								<ul class="post-meta clearfix">
-									<li>Jan 20, 2020</li>
-									<li>
-										<a href="blog-single.html"><i class="fa fa-heart-o" aria-hidden="true"></i>112</a>
-									</li>
-									<li>
-										<a href=""><i class="fa fa-comment-o" aria-hidden="true"></i>22</a>
-									</li>
-								</ul>
-								<div class="post-text">
-									<a href="blog-single.html"> 
-										<h5>Keep it simple and beautiful, fun and functional</h5>
-										<p>Best landing for your app showcase Follow other investors, discover companies to believe in.</p>
-									</a>
-								</div>
-								<a class="btn grdnt-yellow fill" href="blog-single.html"><span class="clip-txt">Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 res-margin">
-						<div class="post-col grad-blue">
-							<a href="blog-single.html"><img alt="" src="image/blog-img-2.jpg"></a>
-							<div class="post-content">
-								<div class="spce md"></div>
-								<ul class="post-meta clearfix">
-									<li>Jan 20, 2020</li>
-									<li>
-										<a href="blog-single.html"><i class="fa fa-heart-o" aria-hidden="true"></i>112</a>
-									</li>
-									<li>
-										<a href=""><i class="fa fa-comment-o" aria-hidden="true"></i>22</a>
-									</li>
-								</ul>
-								<div class="post-text">
-									<a href="blog-single.html"> 
-										<h5>Keep it simple and beautiful, fun and functional</h5>
-										<p>Best landing for your app showcase Follow other investors, discover companies to believe in.</p>
-									</a>
-								</div>
-								<a class="btn grdnt-yellow fill" href="blog-single.html"><span class="clip-txt">Read More</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 res-margin">
-						<div class="post-col grad-blue">
-							<a href="blog-single.html"><img alt="" src="image/blog-img-3.jpg"></a>
-							<div class="post-content">
-								<div class="spce md"></div>
-								<ul class="post-meta clearfix">
-									<li>Jan 20, 2020</li>
-									<li>
-										<a href="blog-single.html"><i class="fa fa-heart-o" aria-hidden="true"></i>112</a>
-									</li>
-									<li>
-										<a href=""><i class="fa fa-comment-o" aria-hidden="true"></i>22</a>
-									</li>
-								</ul>
-								<div class="post-text">
-									<a href="blog-single.html"> 
-										<h5>Keep it simple and beautiful, fun and functional</h5>
-										<p>Best landing for your app showcase Follow other investors, discover companies to believe in.</p>
-									</a>
-								</div>
-								<a class="btn grdnt-yellow fill" href="blog-single.html"><span class="clip-txt">Read More</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End blog -->
+  <div id="contactModal" class="modal">
 
-	<!-- FAQS-->
-	<section id="faqs" class="sec-pad-lg pt-0 grad-yellow bg-memphis">
-		<br>
-		<br>
-		<div class="container">
-			<div class="row">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="faq-wrapper clearfix">
-							<div class="res-margin wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-								<div class="section-text text-center">
-									<h4>Frequently asked quetions</h4>
-								</div>
-							</div>
-							<div class="col-md-7 col-sm-7 faq wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-								<div class="panel-group res-margin" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h4 class="panel-title">
-												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
-													<i class="more-less glyphicon glyphicon-minus"></i>
-													How do we order?
-												</a>
-											</h4>
-										</div>
-										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-											<div class="panel-body">
-												<p>Do you see the button on top menu, click that --> fill the form --> Our team will contact you. Or go <a href="#feature">here</a> --> click your service --> fill the form --> our team will find you anyways</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingTwo">
-											<h4 class="panel-title">
-												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-													<i class="more-less glyphicon glyphicon-plus"></i>
-													Can we track progress of our work?
-												</a>
-											</h4>
-										</div>
-										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-											<div class="panel-body">
-												<p>Yes, currently we are working on a platform with systematic tracking and development, which would make our work completely transparent to the clients. But for now, we promise timely and regular updates and feedback sessions, at the platform of your preference</p>
-											</div>
-										</div>
-									</div>
+    <!-- Modal content -->
+    <div class="container modal-content">
+      <span class="close">&times;</span>
+      <form >
+        <p>Drop A Message!</p>
+        <input type="text" placeholder="What shall we call you?"><br>
+        <input type="text" placeholder="Can we get your phone number?"><br>
+        <input type="email" placeholder="What's your email id?" required><br>
+        <select data-placeholder="Choose our Service" name="service">
+          <option label="Choose Service">Choose a Service</option>
+          <option value="web">Web Development</option>
+          <option value="ai">Data Science/ML</option>
+          <option value="app">App Development</option>
+          <option value="ux">UX/UI Design</option>
+          <option value="web3">Blockchain (Web 3)</option>
+          <option value="support">Technical Support</option>
+          <option value="other">Other</option>
+          </select><br>
+        <textarea placeholder="How can we help you?*" rows="6" id="message" name="message" required></textarea><br>
+        <input type="button" value="Send"><br>
+      </form>
+    
+      <div class="drops">
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+      </div>
+    </div>
+  
+  
+  </div>
+<!--   
+  <?php
+  require 'connection.php';
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+  $servername = "localhost";
+  $database = "u637730811_zynah_overseas";
+  $username = "u637730811_zynah_overseas";
+  $password = "Dreamers29";
+  // Create connection
+  $conn = mysqli_connect($servername, $username, $password, $database);
+  // Check connection
+  if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+      echo 'error';
+  }
+  
 
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingThree">
-											<h4 class="panel-title">
-												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-													<i class="more-less glyphicon glyphicon-plus"></i>
-													Terms of Payment?
-												</a>
-											</h4>
-										</div>
-										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-											<div class="panel-body">
-												<p>It may depend on our discussion with the clients. But we take atleast 50% advance with a legal agreement for the terms of projects.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-md-offset-1 col-sm-5">
-								<img alt="" src="image/img-faq.png">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--  -->
-
-
-	<!-- Contact-->
-	<section id="contact" class="sec-pad-lg pt-0 grad-yellow">
-		<div class="container">
-			<div class="row">
-				<div class="section-text text-center wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-					<p class="meta-head">Connect To Us</p>
-					<h4>Just fill the form we'll come to your rescue</h4>
-				</div>
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-						<div class="row">
-							<div class="col-md-5 col-sm-5 res-margin">
-								<ul class="grad-blue right-dir-col">
-                                    <!--<li>
-                                        <span class="icon-sm clip-txt">
-                                            <i class="fa fa-map-marker"></i>
-                                        </span>
-                                        <div class="text">
-                                        	<h6>Address</h6>
-                                        	<br> G<br> India
-                                        </div>
-                                        <div class="spce"></div>
-                                    </li>-->
-                                    <li>
-                                        <span class="icon-sm clip-txt">
-                                            <i class="fa fa-phone"></i>
-                                        </span>
-                                        <div class="text"><h6>Phone</h6> +91 7011168883</div>
-                                        <div class="spce"></div>
-                                    </li>
-                                    <li>
-                                        <span class="icon-sm clip-txt">
-                                            <i class="fa fa-envelope-o"></i>
-                                        </span>
-                                        <div class="text"><h6>Mail</h6> oceans.diginett@gmail.com <br> </div>
-                                    </li>
-                                </ul>
-								
-							</div>
-							<div class="col-md-7 col-sm-7">
-								<div class="bg-gray contact-form pd-30">
-									<h5>Contact Us / Request Quote</h5>
-									<div class="spce"></div>
-									<div id="form-messages"></div>
-									<form id="ajax-contact" method="post" action="assets/contact.php">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Enter your name *" id="name" name="name" required>
-										</div>
-										<div class="form-group">
-											<input type="contact" class="form-control" placeholder="Enter your contact number (optional)" id="contact" name="contact">
-										</div>
-										<div class="form-group">
-											<input type="email" class="form-control" placeholder="Enter your email *" id="email" name="email" required>
-										</div>
-										<div class="form-group">
-											<select class="form-control" data-placeholder="Choose Service" name="service">
-												<option label="Choose Service"></option>
-												<option value="web">Web Development</option>
-												<option value="ai">Data Science/ML</option>
-												<option value="app">App Development</option>
-												<!-- <option value="sem">Digital/ Affiliate/ Email Marketing</option> -->
-												<!-- <option value="content">Content Creation</option> -->
-												<!-- <option value="cms">Website Builders & CMS</option>
-												<option value="ecom">E-commerce</option>
-												<option value="program">Programming Tasks</option> -->
-												<option value="web3">Blockchain (Web 3)</option>
-												<option value="support">Technical Support</option>
-												<option value="other">Other</option>
-											  </select>
-										</div>
-										<div class="form-group">
-											<textarea class="form-control" placeholder="Requirement*" rows="6" id="message" name="message" required></textarea>
-										</div>
-										<input type="submit" value="Submit" class="btn grdnt-purple">
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--  -->
-
+      if(isset($_POST['submit'])){
+      $email = $_POST['email'];
+    $sql = mysqli_query($conn, "INSERT INTO subscriptions (email) VALUES ('$email')")or die(mysqli_error());
+  
+     echo "Message sent successfully.";
+    header('Location: index.php');
+}
+mysqli_close($conn);
+?> -->
 	<!--Footer  -->
-	<footer class="footer-wrapper pb-0 grdnt-yellow sec-pad light">
+	<footer class="footer-wrapper pb-0 bg-footer-odn sec-pad light">
 		<div class="container footer-content">
 			<div class="row">
 				<div class="subscribe-box flx-container align-flx-center flx-off-sm">
@@ -1018,9 +491,9 @@
 					</div>
 					<div class="col-md-6">
 						<div class="sub-input subscribe custom-form animated wow fadeInUp" data-wow-delay=".1s">
-							<form class="mailchimp custom-form">
+							<form class="mailchimp custom-form" method="post" action="index.php">
 								<div class="form-group">
-									<input type="email" name="subscribe" id="subscriber-email" placeholder="Enter your Email" class="form-control">
+									<input type="email" name="email" id="email" placeholder="Enter your Email" class="form-control">
 								</div>
 								<button type="submit" id="subscribe-button" class="btn grdnt-purple">Subscribe</button>
 							</form>
@@ -1034,9 +507,8 @@
 				</div>
 				<div class="row footer-widget">
 					<div class="col-md-3 col-sm-6 res-margin">
-						<a class="navbar-brand" href="index.html"><img alt="" src="img/logoodn.png"></a>
+						<a class="navbar-brand" href="index.html"><img alt="" src="images/logoodn.png"></a>
 						<div class="spce"></div>
-						<p>You think, We'll Create</p>
 					</div>
 					<div class="col-md-2 col-sm-6 col-md-offset-1 res-margin">
 						<h6>Useful Links</h6>
@@ -1074,17 +546,19 @@
 				<div class="spce md"></div>
 				<div class="spce"></div>
 				<div class="copyright text-center light">
-					2021 Copyright <strong>Tecknologia</strong> . ALL RIGHTS RESERVED
+					2021 Copyright <strong>Oceans DigiNett</strong> . ALL RIGHTS RESERVED
 				</div>
 			</div>			
 		</div>
 	</footer>
 	<!-- End Footer -->
 
+
+
 	<!-- script -->
 	<script src="js/vendor.bundle.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/new.js"></script>
-
+	<!-- <script src="js/contact.js"></script> -->
 </body>
 </html>
