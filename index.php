@@ -455,13 +455,13 @@
   
   </div>
   
-  <!-- <?php
+  <?php
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
 $servername = "localhost";
 $database = "u334027775_odn";
 $username = "u334027775_odn_shoa";
-$password = "Dreamers29";
+$password = "ODNsuccess140421";
   // Create connection
   $conn = mysqli_connect($servername, $username, $password, $database);
   // Check connection
@@ -477,7 +477,7 @@ $password = "Dreamers29";
     header('Location: index.php');
 }
 mysqli_close($conn);
-?> -->
+?>
 	<!--Footer  -->
 	<footer class="footer-wrapper pb-0 bg-footer-odn sec-pad light">
 		<div class="container footer-content">

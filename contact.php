@@ -15,13 +15,13 @@
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
 	</div>
-  <!-- <?php
+  <?php
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
 $servername = "localhost";
 $database = "u334027775_odn";
 $username = "u334027775_odn_shoa";
-$password = "Dreamers29";
+$password = "ODNsuccess140421";
   // Create connection
   $conn = mysqli_connect($servername, $username, $password, $database);
   // Check connection
@@ -58,7 +58,7 @@ $password = "Dreamers29";
     header('Location: contact.php');
 }
 mysqli_close($conn);
-?> -->
+?>
 
 
   <div class="container modal-content">
