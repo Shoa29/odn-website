@@ -230,7 +230,7 @@
         <div class="grid-block col-md-6 col-sm-12">
           <div class="tile">
           <a class="tile-link" href="https://www.unqueue.app/" target="_blank">
-            <img class="tile-img tile-img1" alt="Ecommerce Management" src="images/unqueue1.PNG">
+            <img class="tile-img tile-img1" alt="Ecommerce Management" src="images/unqueue1.png">
           </a>
           </div>
         </div>
@@ -454,15 +454,14 @@
   
   
   </div>
-<!--   
-  <?php
-  require 'connection.php';
+  
+  <!-- <?php
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
-  $servername = "localhost";
-  $database = "u637730811_zynah_overseas";
-  $username = "u637730811_zynah_overseas";
-  $password = "Dreamers29";
+$servername = "localhost";
+$database = "u334027775_odn";
+$username = "u334027775_odn_shoa";
+$password = "Dreamers29";
   // Create connection
   $conn = mysqli_connect($servername, $username, $password, $database);
   // Check connection
@@ -473,10 +472,8 @@
   
 
       if(isset($_POST['submit'])){
-      $email = $_POST['email'];
+        $email = $_POST['email'];
     $sql = mysqli_query($conn, "INSERT INTO subscriptions (email) VALUES ('$email')")or die(mysqli_error());
-  
-     echo "Message sent successfully.";
     header('Location: index.php');
 }
 mysqli_close($conn);
@@ -487,7 +484,7 @@ mysqli_close($conn);
 			<div class="row">
 				<div class="subscribe-box flx-container align-flx-center flx-off-sm">
 					<div class="col-md-6 res-margin">
-						<h4 class="heading">Subscribe Newsletter</h4>
+						<h4 class="heading">Subscribe for Insights</h4>
 					</div>
 					<div class="col-md-6">
 						<div class="sub-input subscribe custom-form animated wow fadeInUp" data-wow-delay=".1s">
@@ -543,8 +540,6 @@ mysqli_close($conn);
 							</ul>
 					</div>
 				</div>
-				<div class="spce md"></div>
-				<div class="spce"></div>
 				<div class="copyright text-center light">
 					2021 Copyright <strong>Oceans DigiNett</strong> . ALL RIGHTS RESERVED
 				</div>

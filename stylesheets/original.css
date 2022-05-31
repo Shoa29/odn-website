@@ -150,7 +150,7 @@ text-shadow: 0px 2px 4px #00000029;
 
 }
 .about-text{
-    text-align: center;
+    text-align: left;
 font: normal normal normal 22px/36px Tahoma;
 letter-spacing: 0px;
 color: #070B55;
@@ -159,6 +159,8 @@ color: #070B55;
     box-shadow: 2px 5px 8px #00000029;
     padding:45px;
     margin:30px;
+    width: 350px;
+    height: 350px;
     
 }
 .item-drops>h5{
@@ -202,20 +204,20 @@ text-shadow: 0px 3px 6px #00000029;
 }
 .work-head-odn{
     background: url(../images/workbg.png) no-repeat;
-    width: 85%;
-    margin-top: 10%;
-    background-size: cover;
+    width: 90%;
+    margin-top: 5%;
+    background-size: contain;
 }
 .work-title-meta{
     text-align: center;
-font: normal normal normal 26px/54px Verdana;
+font: normal normal normal 32px/54px Verdana;
 letter-spacing: 0px;
 color: #1C75BC;
+margin-top: 10%;
 text-shadow: 0px 2px 4px #00000029;
 }
 .work-meta-sub{
     text-align: center;
-    margin-top: 5%;
 font: normal normal bold 40px/43px Verdana;
 letter-spacing: 0px;
 color: #FFFFFF;
@@ -348,10 +350,11 @@ text-shadow: 0px 2px 4px #00000029;
 
 @media only screen and (max-width :1100px) {
     .quote .owl-item img {
-        height: 80px;
-        width: 80px;
-        border-radius: 50% 50% 0% 40%;
-        margin-left:  -100%;
+        height: 90px;
+        width: 90px;
+        border-radius: 50% 50% 40% 2%;
+        margin-left:  -70%;
+        margin-bottom: 13%;
     }
     form{
         width: 480px;
@@ -362,27 +365,36 @@ text-shadow: 0px 2px 4px #00000029;
         top: 150px;
     }  
     .hero.style-wave-2, .hero{
-        padding-top: 0px;
+        padding-top: 30px;
+        padding-bottom: 290px;
     }
     .odn-title{
         display: none;
     } 
     .you-think{
-        font-size: 42px;
+        font-size: 39px;
     }
     .second-line-intro{
-        font-size: 50px;
+        font-size: 46px;
+    }
+    .intro-desc{
+        font-size: 16px;
     }
     .container-content{
         padding: 6% 8%;
     }
 }
 @media only screen and (min-width: 850px) and (max-width :950px) {
+    .item-drops{
+        width: 300px;
+        height: 350px;
+    }
     .quote .owl-item img {
-        height: 80px;
-        width: 80px;
-        border-radius: 50% 50% 0% 40%;
-        margin-left:  -100%;
+        height: 90px;
+        width: 90px;
+        border-radius: 50% 50% 40% 2%;
+        margin-left:  -70%;
+        margin-bottom: 13%;
     }
     .hero .img-pre.right{
         right: -50px;
@@ -407,6 +419,10 @@ text-shadow: 0px 2px 4px #00000029;
     }
 }
 @media only screen and (min-width: 620px) and (max-width :850px) {
+    .item-drops{
+        width: 300px;
+        height: 350px;
+    }
     .hero .img-pre.right{
         right: 0px;
         max-width: 350px;
@@ -431,11 +447,16 @@ text-shadow: 0px 2px 4px #00000029;
 }
 
 @media only screen and (min-width: 280px) and (max-width :600px) {
+    .item-drops{
+        width: 300px;
+        height: 350px;
+    }
     .quote .owl-item img {
-        height: 60px;
-        width: 60px;
-        border-radius: 50% 50% 0% 40%;
-        margin-left:  -80%;
+        height: 70px;
+        width: 70px;
+        border-radius: 50% 50% 40% 2%;
+        margin-left:  -70%;
+        margin-bottom: 10%;
     }
     form{
         width: 350px;
@@ -488,6 +509,6 @@ text-shadow: 0px 2px 4px #00000029;
         padding: 20px 0px;
     }
     .work-title-meta{
-        font-size: 21px;
+        font-size: 24px;
     }
 }
